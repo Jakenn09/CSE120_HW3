@@ -18,19 +18,14 @@ class Planet:
 
 planet1 = Planet()
 weight = float(input("Please enter your weight: "))
-planet_diff = planet1.Mercury
+planet_diff = [planet1.Mercury, planet1.Venus, planet1.Mars, planet1.Jupiter, planet1.Saturn, planet1.Uranus, planet1.Neptune, planet1.Pluto]
 list1 = ["Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uransus", "Neptune", "Pluto"]
-print(planet1.Mars)
-
-#for i in range(len(list1)):
-    #print("Your weight on", list1[i], "is: ", planet1.calculate_spaceweight(weight, planet_diff))
+for i in range(len(list1)):
+    print("Your weight on", list1[i], "is: ", weight * planet_diff[i])
 
 '''
-
 planet_diff = float(input("Please enter the planet diff: "))
 planet1.calculate_spaceweight(weight, planet_diff)
-
-
 
 print(weight * planet1.Mercury)
 print(planet1.Planet)
