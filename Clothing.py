@@ -13,20 +13,22 @@ clothes_list = []
 
 for i in range(num_clothes):
     name = input("Please enter the clothing item: ")
-    minTemp = input("Please enter the minimum temp you would like to wear the item: ")
-    maxTemp = input("Please enter the maximum temp you would like to wear the item: ")
+    minTemp = int(input("Please enter the minimum temp you would like to wear the item: "))
+    maxTemp = int(input("Please enter the maximum temp you would like to wear the item: "))
     formal = input("Would you wear this to a formal event? ")
+    formal = formal.lower()
 
     clothes_list.append(clothing(name, minTemp, maxTemp, formal))
 
-temperature = input("Please enter the current temperature: ")
+temperature = int(input("Please enter the current temperature: "))
 is_formal = input("Is the item formal? ")
+is_formal = is_formal.lower()
 
 print("Items that can be worn: ")
 
 for item in clothes_list:
     if temperature >= item.minTemp and temperature <= item.maxTemp:
-        if is_formal.lower() == item.formal.lower():
+        if is_formal == item.formal:
             print(item.name)
 
 
