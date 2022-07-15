@@ -22,11 +22,3 @@ planet_diff = [planet1.Mercury, planet1.Venus, planet1.Mars, planet1.Jupiter, pl
 list1 = ["Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uransus", "Neptune", "Pluto"]
 for i in range(len(list1)):
     print("Your weight on", list1[i], "is: ", weight * planet_diff[i])
-
-'''
-planet_diff = float(input("Please enter the planet diff: "))
-planet1.calculate_spaceweight(weight, planet_diff)
-
-print(weight * planet1.Mercury)
-print(planet1.Planet)
-'''
