@@ -29,7 +29,7 @@ monster_name.monsterStrength = monster_strength
 
 
 for i in range(num_characters):
-    print(player_name[i], "is fighting", monster_list[0])
+    print(player_name[i],"with", player_strength[i], "strength, is fighting", monster_list[0])
     if player_strength[i] < monster_name.monsterStrength:
         print(monster_list[0], "wins")
         monster_name.monsterStrength = monster_name.monsterStrength - player_strength[i]
